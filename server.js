@@ -74,7 +74,7 @@ app.post('/api/convert', (req, res) => {
   })
 })
 
-app.get('/', (req, res) => htmlRes(res, indexPage(), 200))
+app.get('/', (req, res) => htmlRes(res, indexPage(req), 200))
 
 app.get('*', (req, res) => htmlRes(res, 'Not found, <a href="/">Go home</a>', 404))
 
